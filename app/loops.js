@@ -28,13 +28,25 @@ function factorials(num) {
 // let index = 2; 2<=3; 3--)
 function rangeTotal(n1, n2) {
 
+  let min = Math.min(n1)
+  let max = Math.max(n2)
+
+  let gap = n2 - n1
+
+  let newArr = []
+  for (let i = min; i < food.ingredients.length; i++) {
+    let element = food.ingredients[i]
+    if (element.name != 'sugar') {
+      newArr.push(element)
+    }
+  }
+  return newArr
 
 
-  for (let index = 0; index == gap; index++) {
-    let gap = n2 - n1
-    init = n2 - 1
+  for (let i = 0; i < gap; i++) {
+
     let total = n1 + n2 + init
-
+    return console.log(total)
   }
 
 
